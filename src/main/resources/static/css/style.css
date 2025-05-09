@@ -88,3 +88,24 @@ button:hover{
     text-decoration: underline;
     color: blue;
 }
+
+/* New styles for error messages */
+.error-message {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Animation for form submission */
+@keyframes formSubmit {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.98); }
+    100% { transform: scale(1); }
+}
+
+form.submitting {
+    animation: formSubmit 0.3s ease-in-out;
+}
