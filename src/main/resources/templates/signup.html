@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="signup.js"></script>
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+    <script th:src="@{/static/js/signup.js}"></script>
 </head>
 <body>
     <section id="signup-section">
@@ -29,7 +29,7 @@
             <div id="error-message" class="error-message"></div>
             <button type="submit">Sign Up</button>
             <div class="register">
-                <p>Already have an account? <a href="login.html">Login</a></p>
+                <p>Already have an account? <a th:href="@{/login}">Login</a></p>
             </div>
         </form>
     </section>
