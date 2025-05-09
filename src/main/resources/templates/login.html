@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <section id="login-section">
+        <form id="login-form" class="form">
+            <h1>Login</h1>
+            <div class="input-container">
+                <ion-icon name="person-outline"></ion-icon>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-container">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div id="error-message" class="error-message"></div>
+            <button type="submit">Login</button>
+            <div class="register">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
+        </form>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
